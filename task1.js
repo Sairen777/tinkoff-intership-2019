@@ -6,7 +6,7 @@ function justAddOne(array, number) {
     } else {
       return null;
     }
-  };
+  }
   const strResult = (parseInt(strFromArray) + parseInt(number)).toString();
   return [...strResult].map(digit => parseInt(digit));
 }
