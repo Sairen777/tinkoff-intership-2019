@@ -10,3 +10,4 @@ function justAddOne(array, number) {
   const strResult = (parseInt(strFromArray) + parseInt(number)).toString();
   return [...strResult].map(digit => parseInt(digit));
 }
+
