@@ -11,3 +11,4 @@ function justAddOne(array, number) {
   return [...strResult].map(digit => parseInt(digit));
 }
 
+console.log(justAddOne([1,2,0], 5));

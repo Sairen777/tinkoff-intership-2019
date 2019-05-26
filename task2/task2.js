@@ -30,7 +30,8 @@ const getCardnumberString = transaction => {
   return `Номер карты: ${firstFourNumbers} **** **** ${lastFourNumbers}`;
 };
 
-const getDateString = transaction => `Дата и время операции: ${formatDate(transaction[DATE_KEY])}`;
+const getDateString = transaction =>
+  `Дата и время операции: ${formatDate(transaction[DATE_KEY])}`;
 
 function formatDate(dateString) {
   const date = new Date(dateString);
@@ -73,4 +74,4 @@ const testData = [
   }
 ];
 
-// console.log(parseTransactionDataToString(testData));
+console.log(parseTransactionDataToString(testData));
